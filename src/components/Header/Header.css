@@ -1,15 +1,19 @@
-/* _Header */
-
 .headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px 49px 100px;
 
-    position: relative;
-    z-index: 1;
-    width: auto;
-    
 }
 
 .headerWrap__fig {
-/* .LOGO */
-    
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 13.2rem;
 
+}
+
+.headerWrap__fig img {
+    width: 100%;
 }

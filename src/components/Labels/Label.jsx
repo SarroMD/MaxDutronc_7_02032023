@@ -1,3 +1,5 @@
+import './Label.css'
+
 export default function Label({ cover, title }) {
 	return (
 		<article className="label-logement">

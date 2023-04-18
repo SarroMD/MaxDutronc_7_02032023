@@ -1,41 +1,45 @@
-/* _Nav */
-
 .nav-header {
-	position: relative;
-	text-align: end;
-	margin-top: -65px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	text-transform: none;
 }
 
 .nav-header_link-home {
-	/* Accueil */
-
-	position: relative;
-	margin: 60px;
-
-	font-family: 'Montserrat';
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 24px;
+	text-align: right;
 	line-height: 142.6%;
-	/* or 34px */
-
-	text-decoration-line: underline;
-
 	color: #FF6060;
+	text-decoration: none;
+	padding-left: 3.5rem;
+
 }
 
 .nav-header_link-about {
-	/* A Propos */
-
-	position: relative;
-	margin: 60px;
-
-	font-family: 'Montserrat';
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 24px;
+	text-align: right;
 	line-height: 142.6%;
-	/* or 34px */
-
 	color: #FF6060;
+	text-decoration: none;
+	padding-left: 3.5rem;
+}
+
+.nav-header_link-home:hover {
+	text-decoration-line: underline;
+}
+
+.nav-header_link-home:focus {
+	text-decoration-line: underline;
+}
+
+.nav-header_link-about:hover {
+	text-decoration-line: underline;
+}
+
+.nav-header_link-about:focus {
+	text-decoration-line: underline;
 }

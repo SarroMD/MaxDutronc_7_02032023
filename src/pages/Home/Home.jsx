@@ -2,6 +2,7 @@ import DataLogements from "../../datas/logements.json";
 import Banner from "../../components/Banner/Banner";
 import Label from "../../components/Labels/Label";
 import { Link } from "react-router-dom";
+import './Home.css';
 
 export default function Home() {
 
