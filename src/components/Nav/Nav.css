@@ -1,0 +1,41 @@
+/* _Nav */
+
+.nav-header {
+	position: relative;
+	text-align: end;
+	margin-top: -65px;
+}
+
+.nav-header_link-home {
+	/* Accueil */
+
+	position: relative;
+	margin: 60px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 142.6%;
+	/* or 34px */
+
+	text-decoration-line: underline;
+
+	color: #FF6060;
+}
+
+.nav-header_link-about {
+	/* A Propos */
+
+	position: relative;
+	margin: 60px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 142.6%;
+	/* or 34px */
+
+	color: #FF6060;
+}
