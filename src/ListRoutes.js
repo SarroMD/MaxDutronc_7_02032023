@@ -5,6 +5,7 @@ import About from './pages/About/About'
 import Error from './pages/Error/Error'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import FicheLogement from './pages/FicheLogement/FicheLogement'
 
 
 function ListRoutes() {
@@ -16,6 +17,7 @@ function ListRoutes() {
                         <Route path='/' element={<Home/>}/>
                         <Route path='/about' element={<About/>}/>
                         <Route path='*' element={<Error/>}/>
+                        <Route path='/logement/:id' element={<FicheLogement/>}/>
                     </Routes>
             </main>
             <Footer />

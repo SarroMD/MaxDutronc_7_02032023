@@ -17,3 +17,27 @@
 .headerWrap__fig img {
     width: 100%;
 }
+
+@media screen and (max-width: 769px) {
+
+    .headerWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    
+    }
+    
+    .headerWrap__fig {
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        width: 145px;
+        height: 47px;
+    
+    }
+    
+    .headerWrap__fig img {
+        width: 100%;
+    }
+}

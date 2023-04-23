@@ -3,6 +3,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	text-transform: none;
+	padding-top: 10px;
 }
 
 .nav-header_link-home {
@@ -10,7 +11,7 @@
 	font-style: normal;
 	font-weight: 500;
 	text-align: right;
-	line-height: 142.6%;
+	line-height: 34px;
 	color: #FF6060;
 	text-decoration: none;
 	padding-left: 3.5rem;
@@ -22,7 +23,7 @@
 	font-style: normal;
 	font-weight: 500;
 	text-align: right;
-	line-height: 142.6%;
+	line-height: 34px;
 	color: #FF6060;
 	text-decoration: none;
 	padding-left: 3.5rem;
@@ -42,4 +43,38 @@
 
 .nav-header_link-about:focus {
 	text-decoration-line: underline;
+}
+
+@media screen and (max-width: 769px) {
+
+    .nav-header {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		text-transform: uppercase;
+	}
+	
+	.nav-header_link-home {
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		text-align: right;
+		line-height: 17px;
+		color: #FF6060;
+		text-decoration: none;
+		padding-left: 1rem;
+	
+	}
+	
+	.nav-header_link-about {
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		text-align: right;
+		line-height: 17px;
+		color: #FF6060;
+		text-decoration: none;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }

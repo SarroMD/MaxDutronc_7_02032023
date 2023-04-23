@@ -5,11 +5,10 @@
     height: 340px;
     border-radius: 10px;
     min-width: 335px;
-    margin: 0;
 }
 
 .label-logement:hover {
-    box-shadow:  rgba(255, 96, 96, 0.658) 0 0 22px 6px;
+    box-shadow:  rgba(255, 96, 96, 1) 0 0 0 5px;
 }
 
 .label-logement img {
@@ -37,8 +36,8 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%;
-    color: #f1f1f1;
+    line-height: 25.67px;
+    color: #FFFFFF;
     left: 8%;
     right: 50%;
     top: 80%;
@@ -54,5 +53,20 @@
     background-color: #f7f7f7;
     border-radius: 25px;
     flex-wrap: wrap;
-    margin: 100px;
+    margin: 40px 100px 20px 100px;
+}
+
+@media screen and (max-width: 769px) {
+
+    .label-logement {
+        width: 335px;
+        height: 255px;
+    }
+
+    .labels-container {
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+    }
 }

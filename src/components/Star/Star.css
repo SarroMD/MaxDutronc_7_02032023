@@ -1,0 +1,34 @@
+.star-comp {
+    display: flex;
+    justify-content: space-between;
+    width: 196px;
+    height: 36px;
+}
+
+.star-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 769px) {
+
+    .star-comp {
+        width: 98px;
+        height: 18px;
+    }
+
+    .star {
+        width: 15px;
+        height: 15px;
+    }
+
+    .star-container {
+        margin-top: 25px;
+    }
+}

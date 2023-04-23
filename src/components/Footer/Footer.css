@@ -30,3 +30,12 @@
 	height: 40px;
     
 }
+
+@media screen and (max-width: 769px) {
+
+    .footer-container__text {
+        font-size: 12px;
+        margin: 5% 0 3% 0;
+        
+    }
+}

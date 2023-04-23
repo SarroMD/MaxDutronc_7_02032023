@@ -1,7 +1,11 @@
-function About() {
-    return(
-        <h1>TEST</h1>
-    )
-}
+import AboutBanner from "../../components/AboutBanner/AboutBanner";
+import Collapse from "../../components/Collapse/Collapse";
 
-export default About
+export default function About() {
+	return (
+		<>
+			<AboutBanner />
+			<Collapse />
+		</>
+	);
+}
