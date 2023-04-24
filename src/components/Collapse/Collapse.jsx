@@ -1,28 +1,27 @@
-import { useState, useRef, useEffect } from "react"; //import des hooks de base react
+import { useState, useRef, useEffect } from "react";
 import Vector from "../../images/VECTOR.svg";
 import './Collapse.css'
 
 export default function Collapse() {
-	const [toggle1, setToggle1] = useState(false); // je definie le state du toggle (et false par défaut)
-	const [toggle2, setToggle2] = useState(false); // je definie le state du toggle (et false par défaut)
-	const [toggle3, setToggle3] = useState(false); // je definie le state du toggle (et false par défaut)
-	const [toggle4, setToggle4] = useState(false); // je definie le state du toggle (et false par défaut)
-	const [heightEl, setHeightEl] = useState(); // je definie le state de la hauteur du collapse
-	const refHeight = useRef(); //récupère et conserve la valeur de hauteur du collapse déplié
+	const [toggle1, setToggle1] = useState(false);
+	const [toggle2, setToggle2] = useState(false);
+	const [toggle3, setToggle3] = useState(false);
+	const [toggle4, setToggle4] = useState(false);
+	const [height, setHeight] = useState();
+	const refHeight = useRef();
 
 	useEffect(() => {
-		setHeightEl(`${refHeight.current.scrollHeight}px`); //useEffect s'éxécute au montage du composant, dans ce cas, il définit la hauteur du collapse déplié lors de sa première ouverture et la conserve dans refHeight
+		setHeight(`${refHeight.current.scrollHeight}px`);
 	}, []);
 
 	return (
-		// affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
 		<div className={'collapse'}>
 			<div className="collapse__1">
 				<div onClick={() => setToggle1(!toggle1)} className="collapse__visible">
 					<h2>Fiabilité</h2>
 					<img className={toggle1 ? "vector rotated" : "vector"} src={Vector} alt="vector"/>
 				</div>
-				<div ref={refHeight} className={toggle1 ? "collapse__toggle animated" : "collapse__toggle"} style={{ height: toggle1 ? `${heightEl}` : "0px" }}>
+				<div ref={refHeight} className={toggle1 ? "collapse__toggle animated" : "collapse__toggle"} style={{ height: toggle1 ? `${height}` : "0px" }}>
 					<p aria-hidden={toggle1 ? "true" : "false"}>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
 				</div>
 			</div>
@@ -31,7 +30,7 @@ export default function Collapse() {
 					<h2>Respect</h2>
 					<img className={toggle2 ? "vector rotated" : "vector"} src={Vector} alt="vector"/>
 				</div>
-				<div ref={refHeight} className={toggle2 ? "collapse__toggle animated" : "collapse__toggle"} style={{ height: toggle2 ? `${heightEl}` : "0px" }}>
+				<div ref={refHeight} className={toggle2 ? "collapse__toggle animated" : "collapse__toggle"} style={{ height: toggle2 ? `${height}` : "0px" }}>
 					<p aria-hidden={toggle2 ? "true" : "false"}>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
 				</div>
 			</div>
@@ -47,7 +46,7 @@ export default function Collapse() {
 				<div
 					ref={refHeight}
 					className={toggle3 ? "collapse__toggle animated" : "collapse__toggle"}
-					style={{ height: toggle3 ? `${heightEl}` : "0px" }}
+					style={{ height: toggle3 ? `${height}` : "0px" }}
 				>
 					<p aria-hidden={toggle3 ? "true" : "false"}>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
 				</div>
@@ -64,7 +63,7 @@ export default function Collapse() {
 				<div
 					ref={refHeight}
 					className={toggle4 ? "collapse__toggle animated" : "collapse__toggle"}
-					style={{ height: toggle4 ? `${heightEl}` : "0px" }}
+					style={{ height: toggle4 ? `${height}` : "0px" }}
 				>
 					<p aria-hidden={toggle4 ? "true" : "false"}>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
 				</div>

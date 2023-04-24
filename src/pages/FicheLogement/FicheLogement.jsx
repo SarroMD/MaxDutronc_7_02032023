@@ -18,17 +18,16 @@ export default function FicheLogement() {
 			const picked = DataLogements.find(({ id }) => id === params.id);
 			DataLogements.map(() => setPickedAppart(picked));
 			if (picked === undefined) {
-				navigate("/404", { state: { message: "Can't get data" } }); //renvoi vers la page 404 en cas d'URL de logement invalide
+				navigate("/Error404", { state: { message: "Can't get data" } });
 			}
 		};
 		getData();
-		// eslint-disable-next-line
-	}, []); // array vide du useEffect pour ne lancer qu'une seule fois
+	}, );
 
 	const slidePics = pickedAppart && pickedAppart.pictures;
 	const tags = pickedAppart && pickedAppart.tags;
 	const equipments = pickedAppart && pickedAppart.equipments;
-	const equip = pickedAppart && equipments.map((item, index) => (
+	const equips = pickedAppart && equipments.map((item, index) => (
 			<li key={index} className="equipList">
 				{item}
 			</li>
@@ -60,7 +59,7 @@ export default function FicheLogement() {
 					</div>
 				</section>
 				<div className="collapse-fiche-container">
-					<CollapseLogement equipements={equip} description={pickedAppart.description} />
+					<CollapseLogement equipements={equips} description={pickedAppart.description} />
 				</div>
 			</div>
 		)

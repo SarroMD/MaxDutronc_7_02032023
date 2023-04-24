@@ -1,0 +1,34 @@
+.collapse-logement {
+    display: flex;
+    justify-content: space-between;
+	width: auto;
+	margin: 40px 100px 49px 100px;
+}
+
+.collapse-logement__1 {
+	margin-bottom: 40px;
+	width: 45%;
+}
+
+.collapse-logement__2 {
+	margin-bottom: 40px;
+	width: 45%;
+}
+
+@media screen and (max-width: 769px) {
+
+    .collapse-logement {
+    display: block;
+	margin: 10px 20px 20px 20px;
+    }
+
+    .collapse-logement__1 {
+	margin-bottom: 20px;
+	width: 100%;
+    }
+
+    .collapse-logement__2 {
+    margin-bottom: 50px;
+    width: 100%;
+    }
+}

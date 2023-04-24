@@ -35,7 +35,7 @@
     top: 86%;
 }
 
-.rightArrow {
+.rightVector {
     display: flex;
     position: absolute;
     top: 40%;
@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 
-.leftArrow {
+.leftVector {
     display: flex;
     position: absolute;
     top: 40%;
@@ -76,13 +76,13 @@
         display: none;
     }
 
-    .rightArrow {
+    .rightVector {
         width: 12px;
         height: 20px;
         top: 45%;
     }
     
-    .leftArrow {
+    .leftVector {
         width: 12px;
         height: 20px;
         top: 45%;

@@ -8,19 +8,9 @@ export default function Star({ score }) {
 		<div className="star-comp">
 			{stars.map((level) =>
 				score >= level ? (
-					<img
-						key={level.toString()}
-						className="star"
-						src={Stars}
-						alt="rating star"
-					/>
-				) : ( //affichage conditionnel des étoiles de score, pleine ou vide selon le score passé en props
-					<img
-						key={level.toString()}
-						className="star"
-						src={EmptyStars}
-						alt="rating star"
-					/>
+					<img key={level.toString()} className="star" src={Stars} alt="rating star" />
+				) : (
+					<img key={level.toString()} className="star" src={EmptyStars} alt="rating star" />
 				)
 			)}
 		</div>
