@@ -50,7 +50,7 @@ export default function FicheLogement() {
 						</div>
 					</div>
 					<div className="star-host-container">
-						<div className="host-container redFont">
+						<div className="host-container">
 							<Host hostName={pickedAppart.host.name} hostPic={pickedAppart.host.picture} />
 						</div>
 						<div className="star-container">

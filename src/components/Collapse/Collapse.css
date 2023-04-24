@@ -26,15 +26,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 47px;
+	height: 52px;
 	padding: 7px 15px;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .collapse__visible h2 {
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 142.6%;
 }
 
@@ -42,15 +42,14 @@
     opacity: 0;
 	color: #FF6060;
 	background: #f7f7f7;
-	border-radius: 5px;
-	transition: opacity 0.1s ease-in-out, height 0.2s 0.2s ease-in-out;
+	border-radius: 10px;
 }
 
 .collapse__toggle p {
     margin: 0;
 	padding: 20px 15px;
 	pointer-events: none;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 142.6%;
@@ -59,12 +58,11 @@
 .vector {
     width: 24px;
 	transform: rotate(0deg);
-	transition: 0.2s 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 
 .animated {
     opacity: 1;
-	transition: height 0.1s ease-in-out, opacity 0.2s 0.2s ease-in-out;
 }
 
 .rotated {
