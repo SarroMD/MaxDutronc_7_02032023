@@ -31,11 +31,7 @@ export default function Collapse() {
 			<div className="collapse__3">
 				<div onClick={() => setToggle3(!toggle3)} className="collapse__visible">
 					<h2>Service</h2>
-					<img
-						className={toggle3 ? "vector rotated" : "vector"}
-						src={Vector}
-						alt="vector"
-					/>
+					<img className={toggle3 ? "vector rotated" : "vector"} src={Vector} alt="vector"/>
 				</div>
 				<div className={toggle3 ? "collapse__toggle animated" : "collapse__toggle"} style={{ height: toggle3 ? "auto": "0px" }}>
 					<p aria-hidden={toggle3 ? "true" : "false"}>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
